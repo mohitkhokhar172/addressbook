@@ -191,6 +191,7 @@
                                     </dependency>
                                 </dependencies>
                                 <configuration>
+					<argLine>-Xmx512m -XX:MaxPermSize=128m</argLine>
 					<parallel>methods</parallel>
 					<threadCount>10</threadCount>
 					<includes>
