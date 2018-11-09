@@ -47,7 +47,8 @@ public class AddressbookUI extends UI {
     // a real-world datasource. Typically implemented for
     // example as EJB or Spring Data based service.
     ContactService service = ContactService.createDemoService();
-
+    Public Static void main(Strings[] args)
+    {
     /*
      * The "Main method".
      *
@@ -132,6 +133,7 @@ public class AddressbookUI extends UI {
         contactList.setContainerDataSource(new BeanItemContainer<>(
                 Contact.class, service.findAll(stringFilter)));
         contactForm.setVisible(false);
+    }
     }
 
     /*
